@@ -1,7 +1,7 @@
 # Web应用基础PJ1说明文档
 ### Name: 张添翼  ID:17307110223
 ##### Github: https://github.com/SakuraX99
-##### GitPages: https://github.com/SakuraX99/SOFT130002_PJ
+##### GitPages: https://sakurax99.github.io/SOFT130002_PJ/
 
 ### 1.项目完成情况
 * Home界面

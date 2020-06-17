@@ -14,20 +14,18 @@
 <body>
 <div class="register">
     <p class="registertitle">Sign up to Fisher</p>
-    <form class="register">
+    <form class="register" method="post" action="../php/register_check.php">
         <p class="registerform">Username</p>
-        <input type="text" name="Username" value="" required>
+        <input type="text" name="username" id="register_username" value="" onchange="register_username_check()" required><span id = "register_username_check">Username Required</span>
         <p class="registerform">Email</p>
-        <input type="text" name="Email" value="" required>
+        <input type="text" name="email" id="register_email" value="" onchange="register_email_check()" required><span id = "register_email_check">E-mail is Required</span>
         <p class="registerform">Password</p>
-        <input type="password" name="Password" value="" required>
+        <input type="password" name="password" id="register_password" value="" onchange="register_password_check()" required><span id = "register_password_check">Password Required</span>
         <p class="registerform">Confirm Your Password</p>
-        <input type="password" name="Repassword" value="" required><br>
-        <input class="button" type="submit" onclick="window.location.href='../index.html'"/>
+        <input type="password" name="password_confirm" id="register_password_confirm" value="" onchange="register_password_confirm_check()" required><span id = "register_password_confirm_check">Password Required</span><br>
+        <input class="button" type="submit" onclick="register_check()"/>
     </form>
 </div>
-
-
 
 
 <footer class="footer">
@@ -49,5 +47,7 @@
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/jquery.SuperSlide.2.1.js"></script>
 <script type="text/javascript" src='../js/script.js'></script>
+<script type="text/javascript" src="../js/login.js"></script>
+<script type="text/javascript" src="../js/register.js"></script>
 </body>
 </html>
